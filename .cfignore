@@ -1,0 +1,13 @@
+.git/
+.github/
+test/
+docker/
+extra/
+.devcontainer/
+.editorconfig
+.eslintrc.cjs
+.stylelintrc
+Dockerfile*
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+SECURITY.md

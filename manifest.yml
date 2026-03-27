@@ -16,4 +16,4 @@ applications:
   services:
   - uptime-kuma-db
   routes:
-  - route: uptime-kuma.apps.tas-ndc.kuhn-labs.com
+  - route: uptime-kuma.<YOUR-APPS-DOMAIN>   # EDIT THIS — run 'cf domains' to find yours
