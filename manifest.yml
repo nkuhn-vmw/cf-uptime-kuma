@@ -16,4 +16,4 @@ applications:
   services:
   - uptime-kuma-db
   routes:
-  - route: uptime-kuma.apps.kuhnlabs.io
+  - route: uptime-kuma.apps.tas-ndc.kuhn-labs.com
