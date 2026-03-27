@@ -1,0 +1,19 @@
+---
+applications:
+- name: uptime-kuma
+  memory: 1G
+  disk_quota: 512M
+  instances: 1            # MUST be 1 — no horizontal scaling
+  buildpacks:
+  - nodejs_buildpack
+  command: bash start.sh
+  health-check-type: http
+  health-check-http-endpoint: /
+  timeout: 180
+  env:
+    NODE_ENV: production
+    UPTIME_KUMA_WS_ORIGIN_CHECK: bypass
+  services:
+  - uptime-kuma-db
+  routes:
+  - route: uptime-kuma.apps.kuhnlabs.io
